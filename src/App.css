@@ -1,0 +1,107 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tableContainer {
+  width: 65%;
+  height: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+th {
+  width: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+}
+
+.workflowContainer {
+  width: 30%;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+th, td {
+  width: 200px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+select {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  color: #333;
+  appearance: none;
+  cursor: pointer;
+  width: 100%;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+select:hover {
+  background-color: #eaeaea;
+}
+
+select:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+.workflow {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+.workflow-step {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.join-details {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #555;
+}
